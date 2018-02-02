@@ -26,10 +26,6 @@ library(ipred)
 library(DAAG)
 options(scipen = 10)
 
-# Set Working directory
-setwd("C:\\Users\\uchoa\\OneDrive\\Documents\\DU\\h17\\DT3019_DM\\Project\\Data")
-
-
 ###################
 ### Import data ###
 ###################
@@ -89,7 +85,7 @@ for (i in 2:ncol(pk_vari)){
   pk_vari[,i] <- as.character(pk_vari[,i])
 }
 
-# Remove non-recognized symbols (â,¬) and non-informative symbols
+# Remove non-recognized symbols (Ã¢,Â¬) and non-informative symbols
 pk_vari$My.C.Won<- gsub("[^[:digit:]./-]", "", pk_vari$My.C.Won)
 for (i in 3:5){
   pk_vari[,i] <- gsub(",", "", pk_vari[,i])
