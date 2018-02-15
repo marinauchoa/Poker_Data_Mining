@@ -24,7 +24,9 @@ library(ranger)
 library(dplyr)
 library(ipred)
 library(DAAG)
-options(scipen = 10)
+
+# uncomment below if you want the tables to not have scientific notation
+# options(scipen = 10)
 
 ###################
 ### Import data ###
